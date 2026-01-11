@@ -1,0 +1,19 @@
+<svg width="403" height="40" viewBox="0 0 403 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="402" height="39" rx="19.5" fill="white"/>
+<rect x="0.5" y="0.5" width="402" height="39" rx="19.5" stroke="url(#paint0_linear_1_1097)"/>
+<path d="M35.007 29.5H33.605C30.02 29.5 28.228 29.5 27.114 28.365C26 27.23 26 25.403 26 21.75C26 18.097 26 16.27 27.114 15.135C28.228 14 30.02 14 33.605 14H37.408C40.993 14 42.786 14 43.9 15.135C44.757 16.008 44.954 17.291 45 19.5V21" stroke="url(#paint1_linear_1_1097)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43 26.5H40M40 29.5C39.2044 29.5 38.4413 29.1839 37.8787 28.6213C37.3161 28.0587 37 27.2956 37 26.5C37 25.7044 37.3161 24.9413 37.8787 24.3787C38.4413 23.8161 39.2044 23.5 40 23.5M43 29.5C43.7956 29.5 44.5587 29.1839 45.1213 28.6213C45.6839 28.0587 46 27.2956 46 26.5C46 25.7044 45.6839 24.9413 45.1213 24.3787C44.5587 23.8161 43.7956 23.5 43 23.5M40 14L39.9 13.69C39.405 12.15 39.158 11.38 38.569 10.94C37.979 10.5 37.197 10.5 35.631 10.5H35.368C33.803 10.5 33.02 10.5 32.431 10.94C31.841 11.38 31.594 12.15 31.099 13.69L31 14" stroke="url(#paint2_linear_1_1097)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Plus Jakarta Sans" font-size="16" letter-spacing="0em"><tspan x="56.3438" y="26.528">India&#39;s #1 Project-Based Learning Platform</tspan></text>
+<defs>
+<linearGradient id="paint0_linear_1_1097" x1="201.5" y1="0" x2="201.5" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FDB11F"/>
+<stop offset="1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1_1097" x1="35.5" y1="14" x2="35.5" y2="29.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFA800"/>
+</linearGradient>
+<linearGradient id="paint2_linear_1_1097" x1="38.5" y1="10.5" x2="38.5" y2="29.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFA800"/>
+</linearGradient>
+</defs>
+</svg>

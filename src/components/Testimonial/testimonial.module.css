@@ -1,0 +1,144 @@
+.wrapper {
+  padding: 100px 20px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background: #fff;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 999px;
+  border: 1px solid #ffb703;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  max-width: 900px;
+  margin: 0 auto 14px;
+}
+
+.heading span {
+  color: #ffb703;
+}
+
+.subheading {
+  max-width: 650px;
+  margin: auto;
+  color: #667085;
+  line-height: 1.6;
+}
+
+/* Cards layout */
+.cardsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  width: 300px;
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: all 0.35s ease;
+}
+
+/* Highlighted middle cards */
+.active {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+/* Side cards */
+.inactive {
+  opacity: 0.45;
+}
+
+/* Card header */
+.header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  object-fit: cover;
+}
+
+.header h4 {
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.header span {
+  font-size: 13px;
+  color: #667085;
+}
+
+/* Text */
+.text {
+  font-size: 14px;
+  color: #475467;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.stars {
+  color: #fbbf24;
+  font-size: 16px;
+}
+
+/* Hover focus */
+.card:hover {
+  opacity: 1;
+  transform: translateY(-25px);
+}
+
+/* CTA */
+.viewMore {
+  margin-top: 60px;
+  background: #ffb703;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cardsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .active {
+    transform: none;
+  }
+
+  .inactive {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 32px;
+  }
+}
