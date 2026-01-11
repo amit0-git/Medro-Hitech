@@ -1,26 +1,25 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-width: 1528;
-height: 768;
-left: -15px;
-angle: 0 deg;
-opacity: 1;
+# Medro Hitech - Upskillway
 
 
-<!-- hero  -->
+## 📚 Libraries & Technologies Used
+
+### Core Dependencies
+- **React** `^19.2.0` - Modern UI library for building user interfaces
+- **React DOM** `^19.2.0` - React renderer for web applications
+
+
+### Typography
+- **Google Fonts**:
+  - Plus Jakarta Sans (weights: 200-800)
+  - Manrope (weights: 200-800)
+  - Oregano (regular & italic)
+
+## 🏗️ Design & Architecture Choices
+
+### Component-Based Architecture
+The application follows a modular component-based architecture where each feature is encapsulated in its own component with:
+- **Component folder structure**: Each component lives in its own directory with `.jsx` and `.module.css` files
+
+### Code Splitting & Performance Optimization
+- **React Lazy Loading**: Components are loaded on-demand using `React.lazy()` to reduce initial bundle size
 
