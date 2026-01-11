@@ -60,19 +60,41 @@
   margin: 6px 0;
 }
 
+
+
+
 .backTop {
   margin-top: 60px;
   display: flex;
   align-items: center;
   gap: 12px;
   color: #bdbdbd;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  transition: color 0.3s ease;
+}
+
+.backTop:hover {
+  color: #ffb703;
+}
+
+.backTop:hover span {
+  border-color: #ffb703;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
 }
 
 .backTop span {
   border: 1px solid #444;
   padding: 6px 10px;
   border-radius: 6px;
+  transition: all 0.3s ease;
 }
+
+
 
 /* RIGHT */
 .right {

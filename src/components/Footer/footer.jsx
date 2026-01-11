@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./footer.module.css";
 import demoImg from "../../assets/person.png";
 import ShortLogo from "../../assets/short_logo.png";
 import Social from "../../assets/Social media.svg";
 
-const DemoFooter = () => {
+const Footer = () => {
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show button when user scrolls down more than 300px
+      if (window.scrollY > 300) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className={styles.wrapper}>
       <div className={styles.iconWrapper}>
@@ -45,10 +68,14 @@ const DemoFooter = () => {
             </div>
           </div>
 
-          <div className={styles.backTop}>
+          <button 
+            className={styles.backTop} 
+            onClick={scrollToTop}
+            aria-label="Back to top"
+          >
             Back to top
             <span>↑</span>
-          </div>
+          </button>
         </div>
 
         {/* RIGHT SIDE */}
@@ -74,4 +101,4 @@ const DemoFooter = () => {
   );
 };
 
-export default DemoFooter;
+export default Footer;
