@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import Home from "./Home/Home";
+import Home from "../Home/Home";
 
 
 const Programs = lazy(() => import("../Programs/programs"));
