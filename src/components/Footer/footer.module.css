@@ -13,7 +13,6 @@
   background: linear-gradient(180deg, #0f0f0f, #080808);
   border-radius: 30px;
   overflow: hidden;
-  
 }
 
 .iconWrapper{
@@ -30,9 +29,9 @@
 
 .logo {
   font-size: 28px;
-  
   width: 122px;
 }
+
 .logo1{
   color: white;
   background-color: white;
@@ -43,6 +42,7 @@
   right: -20px;
   top: -10px;
 }
+
 .linksGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -59,9 +59,6 @@
   font-size: 14px;
   margin: 6px 0;
 }
-
-
-
 
 .backTop {
   margin-top: 60px;
@@ -93,8 +90,6 @@
   border-radius: 6px;
   transition: all 0.3s ease;
 }
-
-
 
 /* RIGHT */
 .right {
@@ -141,6 +136,7 @@
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
+  color: #fff;
 }
 
 .image {
@@ -163,4 +159,120 @@
   position: absolute;
   bottom: -10px;
   left: 0px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .left {
+    border-right: none;
+    border-bottom: 1px solid #1c1c1c;
+    padding: 40px;
+  }
+  
+  .right {
+    padding: 40px;
+  }
+  
+  .right h2 {
+    font-size: 40px;
+  }
+  
+  .image {
+    width: 300px;
+    right: -20px;
+  }
+  
+  .linksGrid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    padding: 30px 20px;
+  }
+  
+  .right {
+    padding: 30px 20px;
+  }
+  
+  .right h2 {
+    font-size: 32px;
+  }
+  
+  .inputBox {
+    max-width: 100%;
+  }
+  
+  .linksGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .image {
+    position: static;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 20px;
+    transform: none;
+  }
+  
+  .logo1 {
+    right: 10px;
+    top: 10px;
+  }
+  
+  .credit {
+    position: static;
+    width: auto;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 8px;
+    border-radius: 20px;
+  }
+  
+  .container {
+    border-radius: 20px;
+  }
+  
+  .left,
+  .right {
+    padding: 20px 15px;
+  }
+  
+  .right h2 {
+    font-size: 28px;
+  }
+  
+  .linksGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .logo1 {
+    padding: 8px;
+    right: 5px;
+    top: 5px;
+  }
+  
+  .backTop {
+    margin-top: 40px;
+  }
+  
+  .image {
+    max-width: 200px;
+  }
 }

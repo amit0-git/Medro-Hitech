@@ -1,4 +1,4 @@
-.card {
+/* .card {
   width: 397px;
  
   padding: 22px;
@@ -105,4 +105,129 @@
   padding-bottom: 4px;
   padding-left: 12px;
   gap: 6px;
+} */
+.card {
+  width: 397px;
+  padding: 22px;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image {
+  width: 325px;
+  height: auto;
+  object-fit: cover;
+}
+
+.rating {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reviews {
+  color: #6b7280;
+}
+
+.courseName {
+  color: #111827;
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.duration {
+  color: #6b7280;
+  font-family: Manrope;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  text-align: center;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.outlineBtn {
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  color: #323c4b;
+}
+
+.primaryBtn {
+  flex: 1;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid #e5e7eb;
+  color: #323c4b;
+  font-size: 13px;
+  cursor: pointer;
+  background: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 397px;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .courseName {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+  
+  .image {
+    max-width: 250px;
+  }
+  
+  .courseName {
+    font-size: 16px;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .outlineBtn,
+  .primaryBtn {
+    width: 100%;
+    padding: 8px 12px;
+  }
 }
